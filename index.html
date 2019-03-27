@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body> 
+		<script type="text/javascript">
+			var a=["Nike背包","Andidas运动衫","李宁运动鞋","Kappa外套","361°腰包"];
+			document.write("本次打折的商品是："+"<br />");
+			for (i=0;i<a.length;i++) {
+				document.write(a[i]+"<br />");
+			}
+			document.write("商场商品做出改变后的打折商品有："+"<br />");
+			console.log(a.shift());
+			console.log(a.push("Adidas运动裤")); 
+			for (i=0;i<a.length;i++) {
+				document.write(a[i]+"<br />");
+				
+			}
+			console.log(a.splice(1,1,"特步运动鞋"));
+			document.write("商场商品做出改变后,本次打折的商品有："+"<br />");
+			for (i=0;i<a.length;i++) {
+				document.write(a[i]+"<br />");		 		
+			}						
+			document.write("本次打折的商品有："+"<br />");
+			document.write(a.join("、"));
+			
+		</script>
+	</body>
+</html>
